@@ -1,0 +1,69 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, lightblue, silver);
+    font-family: Sans-serif;
+    font-size: 18px;
+    color: #fffff5;
+  }
+  
+  h1,p {
+    margin: 16px auto;
+    text-align: center;
+  }
+  
+  form{
+    border:solid rgba(216,216,216,0.5);
+    border-radius: 5px;
+    width: 70vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgba(173,216,230,0.5);
+  }
+  fieldset {
+      border: none;
+      padding: 2rem 0;
+      border-bottom: 3px dotted #3b3b4f;
+      border-radius: 5px;
+  }
+  fieldset:last-of-type {
+      border-bottom: none;
+  }
+  label {
+      display: block;
+      margin: 0.5rem 0 ;
+      margin-bottom: .5rem;
+  }
+  
+  input, textarea, select{
+      min-height: 2em;
+      width: 100%;
+      border: 1px solid #0a0a23;
+      border-radius:6px;
+      padding: 2px;
+      margin-bottom: .5rem;
+  
+  }
+  textarea{
+    min-height: 5em;
+  }
+  input[type="submit"] {
+      display: block;
+      width: 60%;
+      margin: 1em auto;
+      height: 2em;
+      font-size: 1.1rem;
+      background-color: #c8c8f1;
+      color: white;
+      border-color: white;
+      min-width: 300px;
+  }
+  .inline{
+    display: inline;
+    width: 4%;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }

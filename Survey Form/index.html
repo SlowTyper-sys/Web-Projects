@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">We appreciate you taking the time to help us Improve</p>
+    <form id="survey-form" method="post" action="">
+    <fieldset>
+        <label for="name-label">Enter Your First Name: </label>
+            <input id="name" name="name" type="text" placeholder="John Doe" required />
+            
+        <label for="email-label">Enter Your Email: </label>
+            <input id="email" name="email" type="email" placeholder="email@example.com" required />
+            
+        <label for="number-label">Enter Your Age: </label>
+            <input id="number" name="number" type="number" pattern="[0-9]+" title="enter numbers only" min="11" max="100" placeholder="23"  required />
+            
+      </fieldset>
+      <fieldset>
+          <label> Which sport do you prefer watching</label>
+          <select id="dropdown">
+              <option value="">(select one)</option>
+            <option value="1">Football</option>
+            <option value="2">Basketball</option>
+            <option value="3">Rugby</option>
+            <option value="4">Other</option>
+          </select>
+          <label>If Selected "Other" what do you watch?</label>
+          <textarea></textarea>
+          <label> How Often do you watch that sport?</label>
+          <label class="inline"><input name="answer" type="radio" class="inline"/>Rarely</label>
+          <label><input name="answer" type="radio" class="inline"/>Often</label>
+          <label><input name="answer" type="radio" class="inline"/>Whenever Possible</label>
+          </fieldset>
+          <fieldset>
+              <label> What do you use to watch those sports</label>
+                <label><input  type="checkbox" value="tv" class="inline"/>TV</label>
+                <label><input  type="checkbox" value="sites" class="inline"/>streaming sites</label>
+                <label><input  type="checkbox" value="stadiums" class="inline"/>At Stadiums</label>
+          </fieldset>
+      <input id="submit" type="submit" />
+    </form>
+</body>
+</html>
