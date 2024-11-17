@@ -7,7 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="container">
+        <h1>Temparature Converter</h1>
+        <div id="convert">
+            <form action="" id="convertform" method="post">
+                <fieldset>
+                    <legend>From</legend>
+                <input type="text" name="FromNumber" id="FromNumber" pattern="^\d*(\.\d{0,2})?$" title="Decimal numbers"
+                placeholder="0.00" autofocus>
+                <select name="FromUnit" id="FromUnit">
+                    <option value="" disabled="disabled">Unit</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                </fieldset>
+                <button type="submit">Convert</button>
+                <fieldset>
+                    <legend>To</legend>
+                    <input readonly type="text" name="ToNumber" id="ToNumber" pattern="^\d*(\.\d{0,2})?$" title="Decimal numbers" 
+                    placeholder="0.00">
+                    <select name="ToUnit" id="YoUnit">
+                        <option value="" disabled="disabled">Unit</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                    </fieldset>
+                
+            </form>
+            <p id="error">text</p>
+        </div>
+    </div>
 </body>
 <script src="main.js"></script>
 </html>
