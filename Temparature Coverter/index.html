@@ -14,9 +14,9 @@
                 <fieldset>
                     <legend>From</legend>
                 <input type="text" name="FromNumber" id="FromNumber" pattern="^\d*(\.\d{0,2})?$" title="Decimal numbers"
-                placeholder="0.00" autofocus>
+                placeholder="0.00" autofocus required>
                 <select name="FromUnit" id="FromUnit">
-                    <option value="" disabled="disabled">Unit</option>
+                    <option value="" >Unit</option>
                     <option value="fahrenheit">Fahrenheit</option>
                     <option value="celsius">Celsius</option>
                     <option value="kelvin">Kelvin</option>
@@ -25,10 +25,9 @@
                 <button type="submit">Convert</button>
                 <fieldset>
                     <legend>To</legend>
-                    <input readonly type="text" name="ToNumber" id="ToNumber" pattern="^\d*(\.\d{0,2})?$" title="Decimal numbers" 
-                    placeholder="0.00">
-                    <select name="ToUnit" id="YoUnit">
-                        <option value="" disabled="disabled">Unit</option>
+                    <input readonly type="text" name="ToNumber" id="ToNumber" value="" placeholder="0.00">
+                    <select name="ToUnit" id="ToUnit">
+                        <option value="" >Unit</option>
                         <option value="fahrenheit">Fahrenheit</option>
                         <option value="celsius">Celsius</option>
                         <option value="kelvin">Kelvin</option>
